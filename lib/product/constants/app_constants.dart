@@ -9,8 +9,7 @@ class AppConstants {
   // Welcome
   static const signIn = 'Log in';
   static const signUp = 'Sign up';
-  static const doNotHaveAnAccount = '''Don't have an account ? ''';
-
+  static const doNotHaveAnAccount = 'Don\'t have an account ? ';
 
   // Sign in (Login) View
   static const signInText = 'Welcome\nBack';
@@ -25,5 +24,10 @@ class AppConstants {
 
   static const nameFormFieldText = 'name';
   static const emailFormFieldText = 'email';
+
+  // Error
+  static const error = 'Error';
+  static const errorText = 'Sorry! This page doesn\'t exist.';
+  static const errorButtonText = 'Go back';
 
 }

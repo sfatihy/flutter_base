@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'features/splash/splash_view.dart';
+import 'product/routes/app_routes.dart';
+import 'product/routes/route_service.dart';
 
 void main() {
   runApp(const App());
@@ -16,7 +17,8 @@ class App extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true
       ),
-      home: const SplashView(),
+      onGenerateRoute: RouteService.generateRoute,
+      initialRoute: AppRoutes.splash,
     );
   }
 }

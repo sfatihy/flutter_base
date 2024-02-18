@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../components/custom_button.dart';
 import '../../../components/custom_text_form_field.dart';
 
-import '../../base/base_view.dart';
-
 import '../../../product/constants/app_constants.dart';
 import '../../../product/constants/image_constants.dart';
 import '../../../product/constants/padding_constants.dart';
+
+import '../../../product/routes/app_routes.dart';
 
 class SignInView extends StatefulWidget {
   const SignInView({super.key});
@@ -72,7 +72,7 @@ class _SignInViewState extends State<SignInView> {
               child: CustomButton(
                 text: AppConstants.signIn,
                 onTap: () {
-                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_) => const BaseView()), (route) => false);
+                  Navigator.pushNamedAndRemoveUntil(context, AppRoutes.base, (route) => false);
                 },
               ),
             )

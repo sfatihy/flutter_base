@@ -1,15 +1,15 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/custom_button.dart';
-
-import '../auth/sign_in/sign_in_view.dart';
-import '../auth/sign_up/sign_up_view.dart';
 
 import '../../product/constants/app_constants.dart';
 import '../../product/constants/color_constants.dart';
 import '../../product/constants/image_constants.dart';
 import '../../product/constants/padding_constants.dart';
 import '../../product/constants/radius_constants.dart';
+
+import '../../product/routes/app_routes.dart';
 
 class WelcomeView extends StatelessWidget {
   const WelcomeView({Key? key}) : super(key: key);
@@ -59,24 +59,33 @@ class WelcomeView extends StatelessWidget {
             CustomButton(
               text: AppConstants.signIn,
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_) => const SignInView()));
+                Navigator.pushNamed(context, AppRoutes.signIn);
               },
             ),
 
             Container(
               color: ColorConstants.whiteAccent,
               margin: PaddingConstants.vLarge * 2.5,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text(AppConstants.doNotHaveAnAccount),
-                  GestureDetector(
-                    child: const Text(AppConstants.signUp),
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (_) => const SignUpView()));
-                    },
-                  )
-                ],
+              width: double.infinity,
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  text: AppConstants.doNotHaveAnAccount,
+                  style: const TextStyle(
+                    color: ColorConstants.black
+                  ),
+                  children: [
+                    TextSpan(
+                      text: AppConstants.signUp,
+                      style: const TextStyle(
+                        color: ColorConstants.black
+                      ),
+                      recognizer: TapGestureRecognizer()..onTap = () {
+                        Navigator.pushNamed(context, AppRoutes.signUp);
+                      }
+                    )
+                  ]
+                ),
               ),
             ),
 

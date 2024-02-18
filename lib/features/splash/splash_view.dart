@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../welcome/welcome_view.dart';
-
 import '../../product/constants/app_constants.dart';
 import '../../product/constants/color_constants.dart';
 import '../../product/constants/padding_constants.dart';
+
+import '../../product/routes/app_routes.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _SplashViewState extends State<SplashView> {
     super.initState();
 
     Future.delayed(const Duration(milliseconds: 1500), () {
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_) => const WelcomeView()), (route) => false);
+      Navigator.pushNamedAndRemoveUntil(context, AppRoutes.welcome, (route) => false);
     });
   }
 
