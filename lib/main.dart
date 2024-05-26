@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base/product/extensions/size_extension.dart';
 
 import 'product/constants/size_constants.dart';
+
 import 'product/routes/app_routes.dart';
 import 'product/routes/route_service.dart';
+
+import 'product/themes/light_theme/light_theme.dart';
 
 void main() {
   runApp(const App());
@@ -18,9 +20,7 @@ class App extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true
-      ),
+      theme: lightTheme,
       onGenerateRoute: RouteService.generateRoute,
       initialRoute: AppRoutes.splash,
     );
