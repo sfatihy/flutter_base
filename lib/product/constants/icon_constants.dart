@@ -1,6 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 abstract class IconConstants {
+
+  // Arrows
+  static IconData arrowBack = Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back;
+  static IconData arrowForward = Platform.isIOS ? Icons.arrow_forward_ios : Icons.arrow_forward;
+  static IconData arrowUp = Icons.arrow_upward_outlined;
+  static IconData arrowDown = Icons.arrow_downward_outlined;
 
   // Auth
   static const IconData password = Icons.remove_red_eye_rounded;
