@@ -11,6 +11,7 @@ import '../../product/constants/padding_constants.dart';
 import '../../product/constants/size_constants.dart';
 
 import '../../product/extensions/size_extension.dart';
+import '../../product/extensions/time_extension.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -28,7 +29,7 @@ class ProfileView extends StatelessWidget {
             pinned: true,
             snap: false,
             stretch: true,
-            floating: true,
+            floating: false,
             toolbarHeight: 0.065.height,
             expandedHeight: 0.155.height,
             backgroundColor: ColorConstants.white,
@@ -184,11 +185,15 @@ class ProfileView extends StatelessWidget {
             child: ListView.separated(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: 10,
+              itemCount: 24,
               itemBuilder: (context, index) {
                 return ListTile(
                   leading: const Icon(IconConstants.user),
                   title: Text(AppConstants.loremIpsum.split('.').first),
+                  subtitle: Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(DateTime.now().subtract(Duration(hours: index * 5)).passedTimeMoreDetailed),
+                  ),
                 );
               },
               separatorBuilder: (context, index) {
