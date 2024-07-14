@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../home/home_view.dart';
 import '../profile/profile_view.dart';
 
 import '../../product/constants/icon_constants.dart';
@@ -15,7 +16,7 @@ class _BaseViewState extends State<BaseView> {
 
   int _bottomIndex  = 0;
 
-  final List<Widget> _bodies = [const Scaffold(), const Scaffold(), const ProfileView()];
+  final List<Widget> _bodies = [const HomeView(), const Scaffold(), const ProfileView()];
 
   @override
   Widget build(BuildContext context) {

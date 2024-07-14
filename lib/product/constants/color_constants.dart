@@ -18,4 +18,10 @@ class ColorConstants {
   static const Color splashGradient1 = Color(0xFF52012A);
   static const Color splashGradient2 = Color(0xFF7CB9EF);
 
+  // Post Colors
+  static const Color postBlack = Colors.black54;
+  static const Color postBlackAccent = Colors.black38;
+  static const Color postIcon = Colors.black45;
+  static const Color postBackground = Colors.white70;
+
 }

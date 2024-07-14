@@ -9,8 +9,10 @@ lib/
 ├── components/
 │   ├── custom_button.dart
 │   ├── custom_colorful_container.dart
+│   ├── custom_column.dart
 │   ├── custom_loading.dart
 │   ├── custom_modal_bottom_sheet.dart
+│   ├── custom_post_widget.dart
 │   ├── custom_profile_picture.dart
 │   └── custom_text_form_field.dart
 ├── features/
@@ -23,6 +25,8 @@ lib/
 │   │   └── base_view.dart
 │   ├── error/
 │   │   └── error_view.dart
+│   ├── home/
+│   │   └── home_view.dart
 │   ├── profile/
 │   │   └── profile_view.dart
 │   ├── splash/
@@ -39,6 +43,8 @@ lib/
 │   │   ├── padding_constants.dart
 │   │   ├── radius_constants.dart
 │   │   └── size_constants.dart
+│   ├── enums/
+│   │   └── post_type_enum.dart
 │   ├── extensions/
 │   │   ├── size_extension.dart
 │   │   └── time_extension.dart

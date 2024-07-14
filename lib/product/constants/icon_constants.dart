@@ -18,6 +18,10 @@ abstract class IconConstants {
   static const IconData explore = Icons.punch_clock;
   static const IconData user = Icons.person;
 
+  // Home
+  static const IconData moreDetail = Icons.more_horiz_outlined;
+  static const IconData favorite = Icons.favorite_border_outlined;
+
   // Profile
   static const IconData menu = Icons.menu_outlined;
 
