@@ -10,12 +10,10 @@ class CustomModalBottomSheet extends StatelessWidget {
 
   final Widget widget;
 
-  const CustomModalBottomSheet(
-    {
-      required this.widget,
-      super.key
-    }
-  );
+  const CustomModalBottomSheet({
+    super.key,
+    required this.widget
+  });
 
   @override
   Widget build(BuildContext context) {

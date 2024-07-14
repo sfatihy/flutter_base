@@ -1,4 +1,4 @@
-class AppConstants {
+abstract final class AppConstants {
 
   static const appName = 'AppName';
 

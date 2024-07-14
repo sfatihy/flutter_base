@@ -9,13 +9,11 @@ class CustomProfilePicture extends StatelessWidget {
   final String imagePath;
   final double? width;
 
-  const CustomProfilePicture(
-    {
-      required this.imagePath,
-      this.width,
-      super.key
-    }
-  );
+  const CustomProfilePicture({
+    super.key,
+    required this.imagePath,
+    this.width
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-class ImageConstants {
+abstract final class ImageConstants {
 
   // Welcome
   static const appLogo = 'https://fastly.picsum.photos/id/1035/200/200.jpg?hmac=IDuYUZQ_7a6h4pQU2k7p2nxT-MjMt4uy-p3ze94KtA4';

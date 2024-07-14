@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class SizeConstants {
+abstract final class SizeConstants {
 
   static const double value   = 4.0;
 

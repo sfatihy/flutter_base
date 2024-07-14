@@ -8,13 +8,11 @@ class CustomColorfulContainer extends StatelessWidget {
   final List<Color> colors;
   final Widget child;
 
-  const CustomColorfulContainer(
-    {
-      required this.colors,
-      required this.child,
-      super.key
-    }
-  );
+  const CustomColorfulContainer({
+    super.key,
+    required this.colors,
+    required this.child
+  });
 
   @override
   Widget build(BuildContext context) {

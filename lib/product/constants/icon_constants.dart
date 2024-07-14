@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-abstract class IconConstants {
+abstract final class IconConstants {
 
   // Arrows
   static IconData arrowBack = Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back;

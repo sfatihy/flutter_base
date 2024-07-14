@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BorderConstants {
+abstract final class BorderConstants {
 
   static const Border formTextBorder = Border(
     left: BorderSide(

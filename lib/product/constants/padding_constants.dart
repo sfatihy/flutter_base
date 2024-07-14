@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PaddingConstants {
+abstract final class PaddingConstants {
 
   static const double value   = 4.0;
 

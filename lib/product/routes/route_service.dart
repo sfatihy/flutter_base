@@ -9,7 +9,7 @@ import '../../features/error/error_view.dart';
 import '../../features/splash/splash_view.dart';
 import '../../features/welcome/welcome_view.dart';
 
-class RouteService {
+abstract final class RouteService {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.splash:

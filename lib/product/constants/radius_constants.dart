@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class RadiusConstants {
+abstract final class RadiusConstants {
 
   static const double value   = 4.0;
 

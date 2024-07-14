@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ColorConstants {
+abstract final class ColorConstants {
 
   // BLACK
   static const Color black = Color(0xFF151515);

@@ -1,4 +1,4 @@
-class AppRoutes {
+abstract final class AppRoutes {
   static const String root = '/';
 
   static const String splash = '/splash';

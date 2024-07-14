@@ -11,13 +11,11 @@ class CustomButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
 
-  const CustomButton(
-    {
-      required this.text,
-      required this.onTap,
-      super.key
-    }
-  );
+  const CustomButton({
+    super.key,
+    required this.text,
+    required this.onTap
+  });
 
   @override
   Widget build(BuildContext context) {
